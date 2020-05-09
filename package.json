@@ -23,7 +23,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "lint": "eslint --max-warnings 0 **/*.ts[x]",
-    "lint:fix": "eslint --fix --max-warnings 0 **/*.ts[x]"
+    "lint:fix": "eslint --fix --max-warnings 0 **/*.ts[x]",
+    "lint:ci": "eslint --max-warnings 0 **/*.ts[x]",
+    "tsc": "tsc"
   },
   "eslintConfig": {
     "extends": "react-app"
