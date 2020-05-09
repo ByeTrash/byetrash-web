@@ -14,14 +14,14 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Use Node.js 12.x
+    - name: Use Node.js 12.x # Use node 12.x (current LTS)
       uses: actions/setup-node@v1
       with:
         node-version: 12.x
-    - run: npm ci
-    - run: npm run tsc
+    - run: npm ci # install's packages as specified in package.lock.json
+    - run: npm run tsc # Check typescript for errors
       name: Check Typescript 
-    - run: npm test
+    - run: npm test # Run tests
       name: Run tests
-    - run: npm run lint:ci
+    - run: npm run lint:ci # Run the linter
       name: Run lint
